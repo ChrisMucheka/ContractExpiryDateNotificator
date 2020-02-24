@@ -141,8 +141,8 @@ def sendMail(name,email,entries):
                  s.sendmail ( senderEmail, email[i], "\n" + message )
              popupmsg("Your notification has been successfully sent")
 def sendSMS(name,phoneNo):
-    account_sid = 'ACd15a3ce952d21ac0b63b459224b0f106'
-    auth_token = '0f6ce6f06d83e1161f047d8f57a46db6'
+    account_sid = 'account_id'
+    auth_token = 'token'
     client = Client ( account_sid, auth_token )
     for i in range(len(name)):
         client.create (
